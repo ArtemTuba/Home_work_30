@@ -23,6 +23,10 @@ function clickPokemon(event){
 }
 
 function addPopup(item){
+    const popDelet = blockPopup.children.length
+    for(let i = 0; i < popDelet; i++){
+        blockPopup.lastElementChild.remove()
+    }
     const popup = document.createElement('div');
     const btn = document.createElement('button');
     const imgPokemon = document.createElement('img');
